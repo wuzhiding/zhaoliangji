@@ -25,5 +25,6 @@ class RunTest():
 if __name__ == '__main__':
     run = RunTest()
     run.go_on_run()
+    print("a")
 
 
