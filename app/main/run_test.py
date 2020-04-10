@@ -3,8 +3,10 @@
 from app.base.runmethod import RunMethod
 from app.data.get_data import GetData
 import unittest
-class RunTest():
-    def setUp(self):
+
+
+class RunTest:
+    def __init__(self):
         self.run_method = RunMethod()
         self.data = GetData()
 
@@ -25,6 +27,3 @@ class RunTest():
 if __name__ == '__main__':
     run = RunTest()
     run.go_on_run()
-    print("a")
-
-

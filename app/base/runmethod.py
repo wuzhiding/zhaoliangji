@@ -19,11 +19,11 @@ class RunMethod:
             res = requests.get(url=url, data=data).json()
         return res
 
-    def run_main(self, url, method, data=None, token=None):
+    def run_main(self, method, url, data=None, token=None):
         res = None
         if method == 'post':
             res = self.post_main(url, data, token)
         else:
-            res = self.get_main(url.data, token)
+            res = self.get_main(url,data, token)
         return res
 

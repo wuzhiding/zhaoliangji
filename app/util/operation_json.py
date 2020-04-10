@@ -22,5 +22,3 @@ class OperationJson:
 
 if __name__ == '__main__':
     opjson = OperationJson()
-    print (opjson.get_data('login'))
-    print (opjson.get_data('favorite_list'))

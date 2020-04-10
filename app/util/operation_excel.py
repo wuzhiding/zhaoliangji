@@ -1,13 +1,10 @@
 # -*- coding:utf-8 -*-
 import xlrd
-
-
 # data = xlrd.open_workbook('D:/www/zhaoliangji/app/dataconfig/interface.xlsx')
 # tables = data.sheets()[0]
 # print(tables.nrows)
 # print(tables.cell_value(1, 1))
 #
-
 class OperationExcel:
     def __init__(self, file_name=None, sheets_id=None):
         if file_name:
@@ -31,8 +28,8 @@ class OperationExcel:
         return tables.nrows
 
     # 获取某一个单元格的内容
-    def get_cell_value(self, row, col):
-        return self.data.cell_value(row, col)
+    def get_cell_value(self, rowx, colx):
+        return self.data.cell_value(rowx, colx)
 
 
 if __name__ == '__main__':
