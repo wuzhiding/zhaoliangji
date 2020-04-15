@@ -13,7 +13,8 @@ class RunTest:
     # 程序执行的主入口
     def go_on_run(self):
         rows_count = self.data.get_case_lines()
-        for i in range(2, rows_count):
+        list=[]
+        for i in range(1, rows_count):
             url = self.data.get_url(i)
             data = self.data.get_data_for_json(i)
             request_way = self.data.get_request_way(i)
@@ -21,9 +22,11 @@ class RunTest:
             token = self.data.is_token(i)
             if run:
                 res = self.run_method.run_main(request_way, url, data, token)
-            return res
+                list.append(res)
+        return list
 
 
 if __name__ == '__main__':
     run = RunTest()
     run.go_on_run()
+    print(run.go_on_run())
