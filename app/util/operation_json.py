@@ -2,9 +2,6 @@
 import json
 
 
-# fp = open('E:/www/zhaoliangji/app/dataconfig/login.json')
-# data = json.load(fp)
-# print(data['login'])
 class OperationJson:
     def __init__(self):
         self.data = self.read_data()
