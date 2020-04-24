@@ -19,4 +19,3 @@ class OperationJson:
 
 if __name__ == '__main__':
     opjson = OperationJson()
-    print(opjson)
